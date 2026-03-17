@@ -44,15 +44,19 @@ ssh-keygen -t ed25519 -C "devforge@backup"
 
 ### Step 2: Add to GitHub
 
-```bash
-# Display public key
-cat ~/.ssh/id_ed25519_devforge.pub
+**✅ SSH Key sudah digenerate!**
+
+Public key:
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPBo7OfYKJlcX6OLguCQMn2jEwE07pZeCFz+kmvSrCWD devforge@backup
 ```
 
-1. Copy key yang ditampilkan
+**Steps:**
+1. Copy public key di atas
 2. Go to GitHub: https://github.com/settings/keys
 3. Click "New SSH key"
-4. Paste key dan save
+4. Title: `DevForge Backup`
+5. Paste key dan click "Add SSH key"
 
 ### Step 3: Update Remote URL
 
