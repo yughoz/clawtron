@@ -46,17 +46,18 @@ ssh-keygen -t ed25519 -C "devforge@backup"
 
 **✅ SSH Key sudah digenerate!**
 
-Public key:
+Public key (copy seluruh baris ini):
 ```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPBo7OfYKJlcX6OLguCQMn2jEwE07pZeCFz+kmvSrCWD devforge@backup
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFU0b8ImppjePwaDRi9ZyUlZqlu5I2uDVMALCUYJpFM5 devforge@openclaw
 ```
 
 **Steps:**
-1. Copy public key di atas
-2. Go to GitHub: https://github.com/settings/keys
-3. Click "New SSH key"
-4. Title: `DevForge Backup`
-5. Paste key dan click "Add SSH key"
+1. Copy SELURUH baris di atas (dari `ssh-ed25519` sampai `devforge@openclaw`)
+2. Go to GitHub: https://github.com/settings/ssh/new
+3. Title: `DevForge Backup`
+4. Key type: `Authentication Key`
+5. Paste key di kolom "Key"
+6. Click "Add SSH key"
 
 ### Step 3: Update Remote URL
 
