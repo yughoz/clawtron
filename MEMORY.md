@@ -49,7 +49,13 @@ DevForge workspace di-backup ke GitHub untuk version control dan disaster recove
 
 ### Automation
 
-Backup bisa di-automate via cron. Lihat `BACKUP.md` untuk dokumentasi lengkap.
+✅ **Automated backup sudah di-setup!**
+
+- **Schedule:** Setiap 6 jam (00:00, 06:00, 12:00, 18:00 UTC)
+- **Log:** `/var/log/devforge-backup.log`
+- **Status:** Active
+
+Lihat `BACKUP.md` untuk dokumentasi lengkap.
 
 ### Files yang Di-backup
 
