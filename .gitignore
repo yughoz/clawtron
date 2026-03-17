@@ -1,0 +1,24 @@
+# OpenClaw workspace gitignore
+
+# Ignore internal OpenClaw files that may contain sensitive data
+.openclaw/session-*.json
+.openclaw/cache/
+
+# Ignore sensitive user data ( uncomment if needed)
+# USER.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.log
