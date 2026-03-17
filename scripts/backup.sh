@@ -26,6 +26,15 @@ if ! git remote | grep -q "origin"; then
     git remote add origin "$REPO_URL"
 fi
 
+# Check if upstream is set
+if ! git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null; then
+    echo "ℹ️  First push, setting upstream..."
+    git push -u origin "$BRANCH"
+    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    echo "✅ Initial backup completed!"
+    exit 0
+fi
+
 # Check for changes
 if git diff-index --quiet HEAD -- 2>/dev/null; then
     echo "ℹ️  No changes to backup"
