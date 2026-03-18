@@ -49,12 +49,41 @@
 
 ---
 
+## Vikunja Integration
+
+### DevForge's Own Credentials
+- **Username:** devforge
+- **Password:** DevForge2026!
+- **API Token:** tk_45c49efacaf70a63e3714719e4a2f6e1625fc6d9
+- **Permissions:** read_all projects, read_all tasks
+- **Last Updated:** 2026-03-18
+
+### Connection Info
+- **URL:** https://vikunja.nekoclaw.my.id
+
+### Auth Header
+```
+Authorization: Bearer tk_8e063b1649aa8797c6cbf3c41980a4b62f157d74
+```
+
+---
+
 ## Workflow
 
 1. Terima task dari Clawtron
 2. Analyze task type
 3. Execute atau spawn sub-agent
 4. Report hasil ke Clawtron
+
+---
+
+## Komunikasi dengan Clawtron
+
+Clawtron adalah main agent yang koordinasi semua agent.
+
+**Cara komunikasi dengan Clawtron:**
+- Session key Clawtron: `agent:main:discord:channel:1483592761021042834`
+- Gunakan `sessions_send` untuk kirim pesan ke Clawtron
 
 ---
 
