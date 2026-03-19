@@ -25,6 +25,18 @@
 
 ---
 
+## Vikunja Integration
+
+| Info | Value |
+|------|-------|
+| **URL** | https://vikunja.nekoclaw.my.id |
+| **Username** | devforge |
+| **Password** | DevForge2026! |
+| **Email** | devforge@nekoclaw.my.id |
+| **API Token** | tk_103dc034107b04d3f70f76db82d38603fdafae46 |
+
+---
+
 ## Sub-Agent Configuration
 
 ### 🔧 Programming Sub-Agent
@@ -41,30 +53,11 @@
 
 ---
 
-## Current Tasks (from Kamisama)
+## Current Tasks
 
 1. Webhook Waha untuk summary group WA
 2. Dashboard monitoring server
 3. Aplikasi pengelolaan keuangan pribadi
-
----
-
-## Vikunja Integration
-
-### DevForge's Own Credentials
-- **Username:** devforge
-- **Password:** DevForge2026!
-- **API Token:** tk_26e19d95c31ea2f1865e9683b6a7e0aea9c00892
-- **Permissions:** Full access (1 year, expires 2027-03-18)
-- **Last Updated:** 2026-03-18
-
-### Connection Info
-- **URL:** https://vikunja.nekoclaw.my.id
-
-### Auth Header
-```
-Authorization: Bearer tk_26e19d95c31ea2f1865e9683b6a7e0aea9c00892
-```
 
 ---
 
@@ -77,53 +70,4 @@ Authorization: Bearer tk_26e19d95c31ea2f1865e9683b6a7e0aea9c00892
 
 ---
 
-## Komunikasi dengan Clawtron
-
-Clawtron adalah main agent yang koordinasi semua agent.
-
-**Cara komunikasi dengan Clawtron:**
-- Session key Clawtron: `agent:main:discord:channel:1483592761021042834`
-- Gunakan `sessions_send` untuk kirim pesan ke Clawtron
-
----
-
-## WA Portal Project
-
-**Path:** `/root/.openclaw/workspaces/devforge/wa-portal`
-
-**Tech Stack:**
-- Runtime: Bun 1.3.11
-- Framework: Hono
-- Database: PostgreSQL
-- ORM: Drizzle
-- Frontend: React + Tailwind (Phase 5)
-
-**Database Schema:**
-- `messages` - WA group messages
-- `summaries` - AI-generated summaries
-- `tickets` - Ticketing system
-- `settings` - App configuration
-- `webhook_logs` - Webhook audit trail
-
-**Endpoints:**
-- `/webhook/waha` - Receive from Waha
-- `/summary` - Summary CRUD
-- `/tickets` - Ticketing CRUD
-- `/settings` - Settings CRUD
-
-**Status:**
-- [x] Phase 1: Setup Project & Database
-- [ ] Phase 2: Webhook & Router (refine)
-- [ ] Phase 3: Summary Service (AI integration)
-- [ ] Phase 4: Ticketing Service
-- [ ] Phase 5: Frontend
-
-**Credentials (from TaskForge):**
-- WA Group ID: `120363425974640529@g.us`
-- OpenClaw API: `https://api.z.ai/api/coding/paas/v4`
-- OpenClaw Key: `58a29fc99dd741aba3d198f07744f838...`
-- Vikunja Token: `tk_d249d88424b2e629c784ad9b13988c37e6795896`
-
----
-
-_Last updated: 2026-03-18_
+_Last updated: 2026-03-19_
